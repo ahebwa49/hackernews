@@ -24,10 +24,11 @@ class App extends Component {
   constructor(props){
     super(props);
 
-    
+    this.state = {
+      list:list,
     }
   }
-  render() {
+  render(){
 
     return (
       <div className="App">
