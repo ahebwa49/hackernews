@@ -22,11 +22,10 @@ class App extends Component {
         objectID: 1,
       },
     ];
-  };
     return (
       <div className="App">
       {list.map(function(item) {
-        
+        return <div>{item.title}</div>;
       })}
       </div>
     );
