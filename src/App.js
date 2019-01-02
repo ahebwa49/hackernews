@@ -25,9 +25,15 @@ class App extends Component {
     return (
       <div className="App">
       {list.map(function(item) {
-        return
+        return(
+          <div>
+          <span>
+            <a href={item.url}>{item.title}</a>
+          </span>
+          </div>
+        );
       })}
-      </div>
+    </div>
     );
   }
 }
