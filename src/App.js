@@ -30,6 +30,7 @@ class App extends Component {
           <span>
             <a href={item.url}>{item.title}</a>
           </span>
+          <span>{item.author}</span>
           </div>
         );
       })}
