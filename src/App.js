@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
   render() {
     const helloWorld = {
-      text: 'Welcome to the road to learn React'
+      text: 'Welcome to the simple road to learn React'
     };
     return (
       <div className="App">
