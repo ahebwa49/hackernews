@@ -7,7 +7,7 @@ class App extends Component {
     const helloWorld = "Welcome to the road to learn React";
     return (
       <div className="App">
-        <h2>Welcome to the road to learn React</h2>
+        <h2>{helloWorld}</h2>
       </div>
     );
   }
