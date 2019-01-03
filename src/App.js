@@ -38,6 +38,8 @@ class App extends Component {
 
     return (
       <div className="App">
+        <form>
+        </form>
       {this.state.list.map((item) =>
 
           <div key={item.objectID}>
