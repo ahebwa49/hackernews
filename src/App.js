@@ -43,6 +43,7 @@ class App extends Component {
           <span>{item.points}</span>
           <span>
             <button
+            onClick = 
             >
           </span>
           </div>
