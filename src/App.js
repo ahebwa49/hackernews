@@ -48,6 +48,7 @@ class App extends Component {
             type = "button"
             >
             Dismiss
+            </button>
           </span>
           </div>
         )}
