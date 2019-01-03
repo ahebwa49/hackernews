@@ -30,8 +30,8 @@ class App extends Component {
     this.onDismiss = this.onDismiss.bind(this);
   }
 
-  onDismiss(){
-    
+  onDismiss(id){
+
   }
   render(){
 
