@@ -47,6 +47,7 @@ class App extends Component {
             onClick = {() => this.onDismiss(item.objectID)}
             type = "button"
             >
+            Dismiss
           </span>
           </div>
         )}
