@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   onDismiss(id){
-
+    const upDatedList = this.state.list.filter((item) => item.objectID !== id)
   }
   render(){
 
