@@ -27,6 +27,7 @@ class App extends Component {
     this.state = {
       list,
     }
+    this.onDismiss = this.onDismiss.bind(this);
   }
   render(){
 
