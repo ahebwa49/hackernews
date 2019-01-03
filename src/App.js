@@ -39,6 +39,7 @@ class App extends Component {
     return (
       <div className="App">
         <form>
+          <input type="text" />
         </form>
       {this.state.list.map((item) =>
 
