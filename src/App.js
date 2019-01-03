@@ -28,6 +28,7 @@ class App extends Component {
       list,
     }
     this.onDismiss = this.onDismiss.bind(this);
+    this.onSearchChange = this.onSearchChange.bind(this);
   }
 
   onDismiss(id){
@@ -41,7 +42,7 @@ class App extends Component {
         <form>
           <input
           type="text"
-          onChange = {this.onSearchChange} 
+          onChange = {this.onSearchChange}
           />
         </form>
       {this.state.list.map((item) =>
