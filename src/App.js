@@ -26,6 +26,7 @@ class App extends Component {
 
     this.state = {
       list,
+      searchTerm: '',
     }
     this.onDismiss = this.onDismiss.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
