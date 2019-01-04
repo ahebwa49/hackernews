@@ -39,9 +39,9 @@ class App extends Component {
   onSearchChange(event){
     this.setState({searchTerm: event.target.value});
   }
-  function isSearched(){
+  function isSearched(searchTerm){
     return function(item){
-      
+
     }
   }
   render(){
