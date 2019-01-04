@@ -20,6 +20,9 @@ const list = [
     objectID: 1,
   }
 ];
+const isSearched = searchTerm => item =>
+  item.title.toLowerCase().includes(searchTerm.toLowerCase());
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -39,11 +42,7 @@ class App extends Component {
   onSearchChange(event){
     this.setState({searchTerm: event.target.value});
   }
-  function isSearched(searchTerm){
-    return function(item){
-      return item.title.toLowerCase().includes(searchTerm.toLowerCase());
-    }
-  }
+
   render(){
 
     return (
