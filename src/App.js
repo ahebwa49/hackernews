@@ -41,7 +41,7 @@ class App extends Component {
   }
   function isSearched(searchTerm){
     return function(item){
-
+      return item.title.toLowerCase().includes(searchTerm.toLowerCase());
     }
   }
   render(){
