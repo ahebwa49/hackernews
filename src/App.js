@@ -53,7 +53,7 @@ class App extends Component {
           onChange = {this.onSearchChange}
           />
         </form>
-      {this.state.list.map((item) =>
+      {this.state.list.filter(isSearched(this.state.searchTerm)).map((item) =>
 
           <div key={item.objectID}>
           <span>
