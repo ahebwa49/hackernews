@@ -47,7 +47,7 @@ class App extends Component {
     const { list, searchTerm } = this.state;
     return (
       <div className="App">
-
+      <Search />
       </div>
     );
   }
