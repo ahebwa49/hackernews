@@ -71,9 +71,8 @@ class Table extends Component {
   render() {
     const { list, pattern, onDismiss } = this.props;
     return (
-      <div>
       {list.filter(isSearched(pattern)).map(item =>
-        Basics in React 62
+
         <div key={item.objectID}>
           <span>
             <a href={item.url}>{item.title}</a>
@@ -82,16 +81,15 @@ class Table extends Component {
           <span>{item.num_comments}</span>
           <span>{item.points}</span>
           <span>
-          <button
-            onClick={() => onDismiss(item.objectID)}
-            type="button"
-          >
-          Dismiss
-          </button>
+            <button
+              onClick={() => onDismiss(item.objectID)}
+              type="button"
+            >
+            Dismiss
+            </button>
           </span>
-          </div>
-          )}
         </div>
+        )
     );
   }
 }
