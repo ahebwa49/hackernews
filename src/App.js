@@ -66,7 +66,7 @@ class Search extends Component {
     const { value, onChange, children } = this.props;
     return (
       <form>
-        <input
+        {children}<input
         type="text"
         value={value}
         onChange={onChange}
