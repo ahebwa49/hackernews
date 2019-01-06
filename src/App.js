@@ -87,6 +87,7 @@ const Table = ({ list, pattern, onDismiss }) =>
             <span>
               <button
                 onClick={() => onDismiss(item.objectID)}
+                className = "button-inline"
               >
               Dismiss
               </button>
