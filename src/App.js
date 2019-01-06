@@ -82,9 +82,9 @@ const Table = ({ list, pattern, onDismiss }) =>
               <a href={item.url}>{item.title}</a>
             </span>
             <span style = {{ width: '30%'}}>{item.author}</span>
-            <span>{item.num_comments}</span>
-            <span>{item.points}</span>
-            <span>
+            <span style = {{ width: '10%'}}>{item.num_comments}</span>
+            <span style = {{ width: '10%'}}>{item.points}</span>
+            <span style = {{ width: '10%'}}>
               <button
                 onClick={() => onDismiss(item.objectID)}
                 className = "button-inline"
