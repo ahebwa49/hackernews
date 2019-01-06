@@ -93,14 +93,8 @@ const Table = ({ list, pattern, onDismiss }) =>
         )}
       </div>
 
-class Button extends Component {
-  render() {
-    const {
-      onClick,
-      className = '',
-      children,
-    } = this.props;
-    return (
+const Button = ({ onClick, className = '', children }) =>
+
       <button
         onClick={onClick}
         className={className}
@@ -108,8 +102,5 @@ class Button extends Component {
       >
       {children}
       </button>
-    );
-  }
-}
 
 export default App;
