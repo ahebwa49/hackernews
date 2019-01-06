@@ -78,7 +78,7 @@ const Table = ({ list, pattern, onDismiss }) =>
         {list.filter(isSearched(pattern)).map(item =>
 
           <div key={item.objectID} className = "table-row">
-            <span>
+            <span style = {{ width: '40%'}}>
               <a href={item.url}>{item.title}</a>
             </span>
             <span>{item.author}</span>
