@@ -23,6 +23,16 @@ const list = [
 const isSearched = searchTerm => item =>
   item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
+const largeColumn = {
+  width: '40%' ,
+};
+const midColumn = {
+  width: '30%' ,
+};
+const smallColumn = {
+  width: '10%' ,
+};
+
 class App extends Component {
   constructor(props){
     super(props);
