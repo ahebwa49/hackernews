@@ -77,7 +77,7 @@ class App extends Component {
       <Table
         list = {result.hits}
         pattern = {searchTerm}
-        onClick = {this.onDismiss}
+        onDismiss = {this.onDismiss}
       />
     </div>
     );
@@ -105,7 +105,7 @@ const Table = ({ list, pattern, onDismiss }) =>
             <span style = {smallColumn}>{item.points}</span>
             <span style = {smallColumn}>
               <Button
-                onClick={() => onDismiss(item.objectID)}
+                onClick = {() => onDismiss(item.objectID)}
                 className = "button-inline"
               >
               Dismiss
