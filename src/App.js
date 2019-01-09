@@ -57,6 +57,10 @@ class App extends Component {
     this.setState({result});
   }
 
+  componentDidMount(){
+
+  }
+
   onDismiss(id){
     const upDatedList = this.state.list.filter((item) => item.objectID !== id)
     this.setState({list: upDatedList});
