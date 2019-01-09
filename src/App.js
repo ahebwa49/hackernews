@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const DEFAULT_QUERY = 'redux';
+
 const list = [
   {
     title: 'React',
