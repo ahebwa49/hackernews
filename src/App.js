@@ -58,7 +58,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-
+    const { searchTerm } = this.state;
   }
 
   onDismiss(id){
