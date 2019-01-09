@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const DEFAULT_QUERY = 'redux';
+const PATH_BASE =  'https://hn.algolia.com/api/v1';
 
 const list = [
   {
