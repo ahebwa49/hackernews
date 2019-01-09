@@ -43,7 +43,7 @@ class App extends Component {
     const { searchTerm } = this.state;
 
     fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`)
-
+      .then(response => response.json())
 }
 
   onDismiss(id){
@@ -55,7 +55,7 @@ class App extends Component {
   }
 
   render(){
-    const { list, searchTerm } = this.state;
+    const { searchTerm } = this.state;
     return (
       <div className="page">
         <div className = "interactions">
