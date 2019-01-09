@@ -52,8 +52,11 @@ class App extends Component {
 
     const isNotId = item => item.objectID !== id;
     const upDatedHits = this.state.result.hits.filter(isNotId);
-    this.setState({result: upDatedHits});
+    this.setState({
+      result: {...this.state.result, hits: upDatedHits}
+    });
   }
+
   onSearchChange(event){
     this.setState({searchTerm: event.target.value});
   }
