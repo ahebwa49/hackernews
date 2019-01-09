@@ -53,6 +53,10 @@ class App extends Component {
     this.onSearchChange = this.onSearchChange.bind(this);
   }
 
+  setSearchTopStories(result){
+    this.setState({result});
+  }
+
   onDismiss(id){
     const upDatedList = this.state.list.filter((item) => item.objectID !== id)
     this.setState({list: upDatedList});
