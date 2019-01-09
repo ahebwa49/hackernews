@@ -48,6 +48,7 @@ class App extends Component {
       result: null,
       searchTerm: DEFAULT_QUERY,
     }
+    this.setSearchTopStories = this.setSearchTopStories.bind(this);
     this.onDismiss = this.onDismiss.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
   }
