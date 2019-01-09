@@ -59,7 +59,10 @@ class App extends Component {
 
   componentDidMount(){
     const { searchTerm } = this.state;
-  }
+
+    fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`)
+
+}
 
   onDismiss(id){
     const upDatedList = this.state.list.filter((item) => item.objectID !== id)
