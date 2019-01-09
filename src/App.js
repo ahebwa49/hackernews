@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   render(){
-    const { searchTerm } = this.state;
+    const { searchTerm, result } = this.state;
     return (
       <div className="page">
         <div className = "interactions">
