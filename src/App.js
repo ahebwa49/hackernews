@@ -49,7 +49,9 @@ class App extends Component {
 }
 
   onDismiss(id){
-    const upDatedHits = this.state.result.hits.filter((item) => item.objectID !== id)
+
+    const isNotId = item => item.objectID !== id;
+    const upDatedHits = this.state.result.hits.filter(isNotId);
     this.setState({list: upDatedHits});
   }
   onSearchChange(event){
