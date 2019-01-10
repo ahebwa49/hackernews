@@ -55,9 +55,10 @@ class App extends Component {
     });
   }
 
-  onSearchSubmit(){
+  onSearchSubmit(event){
     const { searchTerm } = this.state;
     this.fetchSearchTopStories(searchTerm);
+    event.preventDefault();
   }
 
   fetchSearchTopStories(searchTerm){
