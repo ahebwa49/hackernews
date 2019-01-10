@@ -44,7 +44,7 @@ class App extends Component {
   componentDidMount(){
     const { searchTerm } = this.state;
 
-    fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`)
+    fetch(url)
       .then(response => response.json())
       .then(result => this.setSearchTopStories(result))
       .catch(error => error);
