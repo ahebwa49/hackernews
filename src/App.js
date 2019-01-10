@@ -43,11 +43,7 @@ class App extends Component {
 
   componentDidMount(){
     const { searchTerm } = this.state;
-
-    fetch(url)
-      .then(response => response.json())
-      .then(result => this.setSearchTopStories(result))
-      .catch(error => error);
+    this.fetchSearchTopStories(searchTerm);
 }
 
   onDismiss(id){
@@ -61,6 +57,7 @@ class App extends Component {
 
   onSearchSubmit(){
     const { searchTerm } = this.state;
+    this.fetchSearchTopStories(searchTerm);
   }
 
   fetchSearchTopStories(searchTerm){
