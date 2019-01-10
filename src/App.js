@@ -96,7 +96,7 @@ class App extends Component {
     );
   }
 }
-const Search = ({ value, onChange, children }) =>
+const Search = ({ value, onChange, onSubmit, children }) =>
   <form>
     {children}<input
     type="text"
