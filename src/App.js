@@ -30,6 +30,7 @@ class App extends Component {
       result: null,
       searchTerm: DEFAULT_QUERY,
     }
+    this.fetchSearchTopStories = this.fetchSearchTopStories.bind(this);
     this.onSearchSubmit = this.onSearchSubmit.bind(this);
     this.setSearchTopStories = this.setSearchTopStories.bind(this);
     this.onDismiss = this.onDismiss.bind(this);
@@ -63,7 +64,7 @@ class App extends Component {
   }
 
   fetchSearchTopStories(searchTerm){
-    
+
   }
 
   onSearchChange(event){
