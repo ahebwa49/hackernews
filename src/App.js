@@ -97,7 +97,7 @@ class App extends Component {
   }
 }
 const Search = ({ value, onChange, onSubmit, children }) =>
-  <form>
+  <form onSubmit = {onSubmit}>
     {children}<input
     type="text"
     value={value}
