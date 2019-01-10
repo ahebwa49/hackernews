@@ -57,6 +57,10 @@ class App extends Component {
     });
   }
 
+  onSearchSubmit(){
+    const { searchTerm } = this.state;
+  }
+
   onSearchChange(event){
     this.setState({searchTerm: event.target.value});
   }
