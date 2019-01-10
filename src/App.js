@@ -75,6 +75,7 @@ class App extends Component {
 
   render(){
     const { searchTerm, result } = this.state;
+    const page = (result && result.page) || 0;
 
     return (
       <div className="page">
