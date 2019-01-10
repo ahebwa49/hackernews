@@ -88,7 +88,6 @@ class App extends Component {
         {result &&
         <Table
           list = {result.hits}
-          pattern = {searchTerm}
           onDismiss = {this.onDismiss}
         />
       }
@@ -108,9 +107,9 @@ const Search = ({ value, onChange, onSubmit, children }) =>
     </button>
   </form>
 
-const Table = ({ list, pattern, onDismiss }) =>
+const Table = ({ list, onDismiss }) =>
       <div className = "table">
-        {list.filter(isSearched(pattern)).map(item =>
+        {list.map(item =>
 
           <div key={item.objectID} className = "table-row">
             <span style = {largeColumn}>
