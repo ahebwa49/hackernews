@@ -65,6 +65,7 @@ class App extends Component {
 
   fetchSearchTopStories(searchTerm){
     fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`)
+      .then(response => response.json())
   }
 
   onSearchChange(event){
