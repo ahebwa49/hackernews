@@ -94,6 +94,11 @@ class App extends Component {
           onDismiss = {this.onDismiss}
         />
       }
+        <div className="interactions">
+          <Button onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}>
+            More
+          </Button>
+        </div>
     </div>
     );
   }
