@@ -62,6 +62,10 @@ class App extends Component {
     const { searchTerm } = this.state;
   }
 
+  fetchSearchTopStories(searchTerm){
+    
+  }
+
   onSearchChange(event){
     this.setState({searchTerm: event.target.value});
   }
