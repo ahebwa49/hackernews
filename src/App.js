@@ -103,6 +103,9 @@ const Search = ({ value, onChange, onSubmit, children }) =>
     value={value}
     onChange={onChange}
     />
+    <button type = "submit">
+      {children}
+    </button>
   </form>
 
 const Table = ({ list, pattern, onDismiss }) =>
