@@ -44,8 +44,9 @@ class App extends Component {
   setSearchTopStories(result){
     const { hits, page } = result;
     const { searchKey, results} = this.state;
-    const oldHits = page !==0
-      ? this.state.result.hits
+
+    const oldHits = results && results[searchKey]
+      ? results[searchKey].hits
       : [];
 
     const upDatedHits = [
