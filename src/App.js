@@ -44,6 +44,11 @@ class App extends Component {
       ? this.state.result.oldHits
       : [];
 
+    const upDatedHits = [
+      ...oldHits,
+      ...hits
+    ];
+
     this.setState({result});
   }
 
