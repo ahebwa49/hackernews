@@ -30,7 +30,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      result: null,
+      results: null,
       searchTerm: DEFAULT_QUERY,
     }
     this.fetchSearchTopStories = this.fetchSearchTopStories.bind(this);
