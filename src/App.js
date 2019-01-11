@@ -34,6 +34,7 @@ class App extends Component {
       searchKey: '',
       searchTerm: DEFAULT_QUERY,
     }
+    this.needsToSearchTopStories = this.needsToSearchTopStories.bind(this);
     this.fetchSearchTopStories = this.fetchSearchTopStories.bind(this);
     this.onSearchSubmit = this.onSearchSubmit.bind(this);
     this.setSearchTopStories = this.setSearchTopStories.bind(this);
@@ -74,8 +75,12 @@ class App extends Component {
 
     const isNotId = item => item.objectID !== id;
     const upDatedHits = hits.filter(isNotId);
+
     this.setState({
-      result: {...this.state.result, hits: upDatedHits}
+        results: {
+        ...results,
+        [searchKey]: { hits: upDatedHits, page }
+      }
     });
   }
 
