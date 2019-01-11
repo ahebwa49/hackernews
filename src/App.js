@@ -97,7 +97,17 @@ class App extends Component {
 
   render(){
     const { searchTerm, results, searchKey } = this.state;
-    const page = (result && result.page) || 0;
+    const page = (
+      results &&
+      results[searchKey] &&
+      results[searchKey].page
+    ) || 0;
+
+    const list = (
+      results &&
+      results[searchKey] &&
+      results[searchKey].hits
+    ) || [];
 
     return (
       <div className="page">
