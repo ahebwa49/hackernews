@@ -84,6 +84,10 @@ class App extends Component {
     });
   }
 
+  needsToSearchTopStories(searchTerm) {
+    return !this.state.results[searchTerm];
+  }
+
   onSearchSubmit(event){
     const { searchTerm } = this.state;
     this.setState({searchKey: searchTerm});
