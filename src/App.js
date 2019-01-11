@@ -41,7 +41,7 @@ class App extends Component {
   setSearchTopStories(result){
     const { hits, page } = result;
     const oldHits = page !==0
-      ? this.state.result.oldHits
+      ? this.state.result.hits
       : [];
 
     const upDatedHits = [
@@ -104,8 +104,7 @@ class App extends Component {
         <Table
           list = {result.hits}
           onDismiss = {this.onDismiss}
-        />
-      }
+        />}
         <div className="interactions">
           <Button onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}>
             More
