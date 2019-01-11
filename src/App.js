@@ -31,6 +31,7 @@ class App extends Component {
 
     this.state = {
       results: null,
+      searchKey: '',
       searchTerm: DEFAULT_QUERY,
     }
     this.fetchSearchTopStories = this.fetchSearchTopStories.bind(this);
