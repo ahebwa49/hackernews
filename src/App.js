@@ -55,7 +55,10 @@ class App extends Component {
     ];
 
     this.setState({
-      result : { hits: upDatedHits, page }
+      results : {
+        ...results,
+         [searchKey]: {hits: upDatedHits, page}
+       }
     });
   }
 
