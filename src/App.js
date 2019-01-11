@@ -49,7 +49,9 @@ class App extends Component {
       ...hits
     ];
 
-    this.setState({result});
+    this.setState({
+      result : { hits: upDatedHits, page }
+    });
   }
 
   componentDidMount(){
