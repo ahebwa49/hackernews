@@ -73,6 +73,10 @@ class App extends Component {
     this.fetchSearchTopStories(searchTerm);
 }
 
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
+
   onDismiss(id){
     const { searchKey, results } = this.state;
     const { hits, page } = results[searchKey];
