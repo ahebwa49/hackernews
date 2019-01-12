@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 const DEFAULT_QUERY = 'redux';
 const PATH_BASE =  'https://hn.algolia.com/api/v1';
