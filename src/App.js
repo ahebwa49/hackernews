@@ -111,7 +111,7 @@ class App extends Component {
   }
 
   render(){
-    const { searchTerm, results, searchKey } = this.state;
+    const { searchTerm, results, searchKey, error } = this.state;
     const page = (
       results &&
       results[searchKey] &&
