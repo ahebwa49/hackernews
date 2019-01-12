@@ -67,6 +67,7 @@ class App extends Component {
   }
 
   componentDidMount(){
+    this._isMounted = true;
     const { searchTerm } = this.state;
     this.setState({ searchKey: searchTerm});
     this.fetchSearchTopStories(searchTerm);
