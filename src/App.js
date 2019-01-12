@@ -124,6 +124,10 @@ class App extends Component {
       results[searchKey].hits
     ) || [];
 
+    if (error) {
+      return <p>Something went wrong.</p>;
+    }
+
     return (
       <div className="page">
         <div className = "interactions">
